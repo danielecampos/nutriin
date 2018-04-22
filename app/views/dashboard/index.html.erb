@@ -1,0 +1,140 @@
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div id="wrapper" class="active">
+      
+      <!-- Sidebar -->
+            <!-- Sidebar -->
+      <div id="sidebar-wrapper">
+        <ul id="sidebar_menu" class="sidebar-nav">
+             <li class="sidebar-brand"><a class="text-custom" id="menu-toggle" href="#">Menu<span id="main_icon" class="glyphicon glyphicon-align-justify"></span></a></li>
+        </ul>
+        <ul class="sidebar-nav" id="sidebar">     
+            <li><a href="#" class="border-li">Painel de Controle<span class="sub_icon glyphicon glyphicon-home"></span></a></li>
+            <li><a href="#" class="border-li">Meus Pacientes<span class="sub_icon glyphicon glyphicon-user"></span></a></li>
+             <li><a href="#" class="border-li"></a></li>
+        </ul>
+      </div>
+          
+      <!-- Page content -->
+      <div id="page-content-wrapper">
+        <div class="page-content inset">
+          <div class="row">
+              <div class="col-md-12">
+                    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
+                      <h5 class="my-0 mr-md-auto font-weight-normal">Company name</h5>
+                      <nav class="my-2 my-md-0 mr-md-3">
+                        <a class="p-2 text-dark" href="#">Features</a>
+                        <a class="p-2 text-dark" href="#">Enterprise</a>
+                        <a class="p-2 text-dark" href="#">Support</a>
+                        <a class="p-2 text-dark" href="#">Pricing</a>
+                      </nav>
+                      <a class="btn btn-outline-primary" href="#">Sign up</a>
+                    </div>
+                    
+                    <!-- Modal -->
+                    <div id="myModal"></div>   
+                      
+                      <div class="col-md-12" style="padding:15px;">
+                          <button type="button" class="btn btn-info btn-lg right ative" data-toggle="modal" data-target="#myModal">Cadastrar Paciente</button>
+                          <button type="button" class="btn btn-info btn-lg right">Iniciar Consulta</button>
+                          <%= link_to "New Paciente Modal", new_paciente_path, remote: true, class: "btn btn-info btn-lg right ative" %>
+                      </div>
+                      <div class="col-md-6">
+        	<div class="carousel slide" id="carousel-964804">
+        		<ol class="carousel-indicators">
+        			<li data-slide-to="0" data-target="#carousel-964804">
+        			</li>
+        			<li data-slide-to="1" data-target="#carousel-964804" class="active">
+        			</li>
+        			<li data-slide-to="2" data-target="#carousel-964804">
+        			</li>
+        		</ol>
+        		<div class="carousel-inner">
+        			<div class="carousel-item active carousel-item-left">
+        				<h1> teste 1</h1>
+        				<div class="carousel-caption">
+        					<h4>
+        						First Thumbnail label
+        					</h4>
+        					<p>
+        						Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+        					</p>
+        				</div>
+        			</div>
+        			<div class="carousel-item carousel-item-next carousel-item-left">
+        			    	<h1> teste 2</h1>
+        				<div class="carousel-caption">
+        					<h4>
+        						Second Thumbnail label
+        					</h4>
+        					<p>
+        						Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+        					</p>
+        				</div>
+        			</div>
+        			<div class="carousel-item">
+        			    <h1> teste 3</h1>
+        				<div class="carousel-caption">
+        					<h4>
+        						Third Thumbnail label
+        					</h4>
+        					<p>
+        						Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+        					</p>
+        				</div>
+        			</div>
+        		</div> <a class="carousel-control-prev" href="#carousel-964804" data-slide="prev"><span class="carousel-control-prev-icon"></span> <span class="sr-only">Previous</span></a> <a class="carousel-control-next" href="#carousel-964804" data-slide="next"><span class="carousel-control-next-icon"></span> <span class="sr-only">Next</span></a>
+        	</div>
+        </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <script>
+        $("#menu-toggle").click(function(e) {
+                e.preventDefault();
+                $("#wrapper").toggleClass("active");
+        });
+    </script>
+    
+<section class="container-fluid">
+<div class="col-md-11">
+
+        
+        
+ </div>
+</section>
+
+<div class="container">
+  <h2>Basic Modal Example</h2>
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the modal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>

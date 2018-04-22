@@ -1,0 +1,212 @@
+// Place all the styles related to the Dashboard controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+.row{
+    margin-left:0px;
+    margin-right:0px;
+}
+
+#wrapper {
+    padding-left: 70px;
+    transition: all .4s ease 0s;
+    height: 100%
+}
+.text-custom{
+    color: #ffb8b6!important;
+}
+#sidebar-wrapper {
+    margin-left: -250px;
+    left: 70px;
+    width: 250px;
+    background: #bb7c7c;
+    position: fixed;
+    height: 100%;
+    z-index: 10000;
+    transition: all .4s ease 0s;
+}
+
+.sidebar-nav {
+    display: block;
+    float: left;
+    width: 250px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#page-content-wrapper {
+    padding-left: 0;
+    margin-left: 0;
+    width: 100%;
+    height: auto;
+}
+#wrapper.active {
+    padding-left: 250px;
+}
+#wrapper.active #sidebar-wrapper {
+    left: 250px;
+}
+
+#page-content-wrapper {
+  width: 100%;
+}
+
+#sidebar_menu li a, .sidebar-nav li a {
+    color: #fff;
+    display: block;
+    float: left;
+    text-decoration: none;
+    width: 250px;
+    background: #bb7c7c;
+    -webkit-transition: background .5s;
+    -moz-transition: background .5s;
+    -o-transition: background .5s;
+    -ms-transition: background .5s;
+    transition: background .5s;
+}
+.border-li{border-top: 1px solid #ff9d9b;}
+.sidebar_name {
+    padding-top: 25px;
+    color: #fff;
+    opacity: .7;
+}
+
+.sidebar-nav li {
+  line-height: 50px;
+  text-indent: 20px;
+}
+
+.sidebar-nav li a {
+  color: #fff;
+  display: block;
+  text-decoration: none;
+}
+
+.sidebar-nav li a:hover {
+  color: #fff;
+  background: rgba(255,255,255,0.2);
+  text-decoration: none;
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+  text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+  height: 65px;
+  line-height: 60px;
+  font-size: 18px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+  color: #fff;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+  color: #fff;
+  background: none;
+}
+
+#main_icon{
+    float:right;
+   padding-right: 65px;
+   padding-top:20px;
+}
+.sub_icon
+{
+    float:right;
+   padding-right: 65px;
+   padding-top:15px;
+}
+.content-header {
+  height: 65px;
+  line-height: 65px;
+}
+
+.content-header h1 {
+  margin: 0;
+  margin-left: 20px;
+  line-height: 65px;
+  display: inline-block;
+}
+
+@media (max-width:767px) {
+    #wrapper {
+    padding-left: 70px;
+    transition: all .4s ease 0s;
+}
+#sidebar-wrapper {
+    left: 70px;
+}
+#wrapper.active {
+    padding-left: 250px;
+}
+#wrapper.active #sidebar-wrapper {
+    left: 250px;
+    width: 250px;
+    transition: all .4s ease 0s;
+}
+}
+
+
+//
+.right{
+    float:right;
+}
+//
+.carousel{
+        border: 1px solid #ccc;
+    background: #f3f3f3;
+    height: 300px;
+}
+//
+#google-agenda{
+    width:100%;
+    height:600px;
+}
+
+//
+.container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 0px;
+}
+//
+.row {
+    margin-right: 0!important;
+    margin-left: 0!important;
+}
+
+// Botoes
+.btn-info {
+    border-radius:0!important;
+    margin:1.5px;
+    color: #17a2b8!important;
+    background-color: #ffffff!important;
+    border-color: #17a2b8!important;
+    font-family: 'Roboto'!important;
+    font-weight:100!important;
+}
+.btn-info:focus{outline:none!important;}
+.btn-info:hover{
+  
+}
+.ative{
+    color: #fff!important;
+    background-color: #17a2b8!important;
+    border-color: #17a2b8!important;
+}
+.ative:hover{
+    background:#168a9c!important;
+}
+// Modal 
+.modal-header-custom{
+    color:#fff!important;
+    border-radius: 0!important;
+    background: #17a2b8!important;
+}
+.close{color:#fff!important;}
+.modal-header .close {
+    margin-top: 0px!important;
+}
